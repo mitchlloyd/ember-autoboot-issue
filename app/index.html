@@ -24,18 +24,6 @@
       <div id="target">
     </div>
 
-    <script>
-      Application.visit('/').then(function(appInstance) {
-        var Component = appInstance._lookupFactory('component:test-component');
-        Component.create().appendTo('#target');
-
-        window.viewRegistry = appInstance.lookup('-view-registry:main');
-
-        console.log('-view-registry:main is ', window.viewRegistry);
-        console.log('component view registry is ', window.testComponentViewRegistry);
-      });
-    </script>
-
     {{content-for "body-footer"}}
   </body>
 </html>

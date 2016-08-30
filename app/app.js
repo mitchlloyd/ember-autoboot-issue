@@ -15,10 +15,4 @@ App = Ember.Application.extend({
 
 loadInitializers(App, config.modulePrefix);
 
-export default {
-  create(...args) {
-    let Application = App.create(...args);
-    window.Application = Application;
-    return Application;
-  }
-};
+export default App;

@@ -7,7 +7,7 @@ export default Ember.Component.extend({
     window.testComponentViewRegistry = this._viewRegistry;
   },
 
-  layout: hbs`<p>Can't click this</p>`,
+  layout: hbs`<p>Can click this</p>`,
 
   click() {
     alert('clicked');
